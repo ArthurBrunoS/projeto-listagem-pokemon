@@ -1,0 +1,29 @@
+{
+  "projects": [
+    {
+      "repo": "Pokedex",
+      "source_commit": "f0f065e060dc0ad2cc6e2e933529d097d6c37e66",
+      "path": "demos/pokedex/"
+    },
+    {
+      "repo": "JavaScrypt_Unicesumar",
+      "source_commit": "90c8fa9dd8f8e56d8056825a9adc41c9e3cf6a72",
+      "path": "demos/portfolio/"
+    },
+    {
+      "repo": "Calculadora-IMC-Javscrypt",
+      "source_commit": "a89dd22204c83aeff685aa23b8dfc3d8c3ed261c",
+      "path": "demos/calculadora/"
+    },
+    {
+      "repo": "Projeto_FrontEnd_Unicesumar",
+      "source_commit": "c7d1c386eeae00f706571fe9d33c375cad7a2142",
+      "path": "demos/blog/"
+    },
+    {
+      "repo": "mario-game-project",
+      "source_commit": "7f974dc92740cfcfbeaf86724c2c5ebb9f5c8520",
+      "path": "demos/mario/"
+    }
+  ]
+}

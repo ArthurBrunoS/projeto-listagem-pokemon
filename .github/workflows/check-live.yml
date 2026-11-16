@@ -1,0 +1,23 @@
+name: Verificar demonstracoes publicadas
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'demos/**'
+      - 'projetos/**'
+      - 'scripts/check-live.cjs'
+      - '.github/workflows/check-live.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Aguardar publicacao e verificar paginas e arquivos
+        run: node scripts/check-live.cjs

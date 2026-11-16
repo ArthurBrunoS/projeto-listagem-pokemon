@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Jogo de estudo com salto, obstáculos, pontuação e controles por teclado ou toque.">
+<title>Mario Jump | Arthur Bruno</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/scrypts.js" defer></script>
+</head>
+<body>
+<main>
+<h1>Mario Jump</h1>
+<p id="instructions">Pule os obstáculos com Espaço, seta para cima ou o botão Pular. Use P para pausar.</p>
+<div class="scoreboard"><p>Pontos: <span id="score">0</span></p><p>Recorde neste navegador: <span id="best">0</span></p></div>
+<div class="game-board" role="region" aria-label="Área do jogo" aria-describedby="instructions" tabindex="0">
+<img src="./images/clouds.png" class="clouds" alt="">
+<img src="./images/mario.gif" class="mario" alt="Mario" width="64" height="80">
+<img src="./images/pipe.png" class="pipe" alt="Obstáculo" width="50" height="70">
+</div>
+<p id="game-status" role="status" aria-live="polite">Pronto para começar.</p>
+<div class="controls"><button id="start" type="button">Iniciar jogo</button><button id="jump" type="button" disabled>Pular</button><button id="pause" type="button" disabled>Pausar</button></div>
+<p class="credits">Projeto educacional de fã, sem afiliação à Nintendo. Personagens e marcas pertencem aos respectivos titulares.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entre em contato com o blog para compartilhar experiências, sugestões ou dúvidas sobre viagens e hobbies." />
+    <meta name="keywords" content="contato, viagens, hobbies, sugestões, mensagem" />
+    <meta name="author" content="Arthur Bruno da Silva" />
+    <meta name="robots" content="index,follow" />
+    <title>Contato | Blog de viagens e hobbies</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/button.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" aria-label="Navegação principal">
+        <div id="navbar-inner">
+          <h1>Blog de viagens, aventuras e hobbies</h1>
+          <div class="nav-actions">
+            <ul id="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./categorias.html">Categorias</a></li>
+              <li><a href="./contato.html">Contato</a></li>
+              <li><a href="./Sobre.html">Sobre</a></li>
+            </ul>
+            <button id="dark-mode" type="button" aria-label="Alternar tema" aria-pressed="false">🌙</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container contact-page">
+      <section class="contact-section reveal" aria-labelledby="contato-titulo">
+        <div class="contact-info">
+          <h2 id="contato-titulo">Entre em Contato</h2>
+          <p>
+            Se você tiver alguma dúvida, sugestão ou quiser compartilhar suas
+            experiências de viagem e hobbies, envie uma mensagem. Adoramos
+            ouvir nossos leitores!
+          </p>
+
+          <button id="toggle-tip" type="button" aria-expanded="false" aria-controls="tip-box">Mostrar dica</button>
+          <div id="tip-box" class="tip-box">
+            Dica: use um e-mail válido e descreva sua ideia com detalhes para
+            receber uma resposta mais completa.
+          </div>
+        </div>
+
+        <form class="contact-form" aria-describedby="contact-note">
+<p id="contact-note">Formulário de demonstração: nenhuma mensagem será enviada ou armazenada.</p>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required maxlength="100" placeholder="Seu nome" />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required minlength="10" maxlength="2000" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+
+          <button type="submit">Validar mensagem de demonstração</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <h2>Blog</h2>
+      <p>Os melhores registros de aventuras</p>
+      <p>2026 &copy; Hora de codar</p>
+      <p>
+        Github: <a href="https://github.com/ArthurBrunoS" target="_blank" rel="noopener noreferrer">🚀 Conheça meus projetos no GitHub</a>
+      </p>
+    </footer>
+
+    <button id="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+  <script src="../script.js" defer></script>
+  </body>
+</html>

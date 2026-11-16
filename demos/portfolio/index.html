@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="description" content="Portfólio de Arthur Bruno, estudante de Engenharia de Software com foco em desenvolvimento front-end.">
+    <title>Arthur Bruno - Sobre mim</title>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/133883144?v=4" alt="Foto de Arthur" width="140" height="140">
+        <div>
+            <h1>Arthur Bruno</h1>
+            <p class="cargo">Estudante de Engenharia de Software</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre mim</h2>
+            <p>Olá! Sou Estudante de Engenharia de Software. Estou me desenvolvendo na parte
+                de front-end mas tenho interesse em futuramente me tornar full-stack.
+            </p>
+            <p class="destaque">
+                Esta é minha primeira página feita do zero com HTML e CSS.
+            </p>
+        </section>
+
+        <section  class="skills">
+            <h2>O que estou aprendendo</h2>
+            <ul class="lista-skills"></ul>
+            <form class="form-skill">
+                <label for="novo-skill">Adicionar skill</label>
+                <input
+                id="novo-skill"
+                name="skill"
+                type="text"
+                placeholder="Ex: Git"
+                required
+                >
+                <button type="submit">Salvar skills</button>
+            </form>
+        </section>
+
+
+
+        <section>
+            <h2>Meus Projetos</h2>
+            <div class="projetos" aria-live="polite"></div>
+        </section>
+
+
+        <section>
+            <h2>Vamos conversar ?</h2>
+            <p>Você pode me encontrar nos meus perfis ou enviar uma mensagem.</p>
+            <div class="redes">
+            <a href="https://github.com/ArthurBrunoS" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Arthur Bruno">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            
+            </div>
+            <button class="btn-mensagem" type="button" aria-expanded="false" aria-controls="contact-form">Abrir formulário de demonstração</button>
+
+            <form id="contact-form" class="formulario-contato escondido" aria-describedby="form-note">
+                <p id="form-note">Demonstração: os dados não são enviados nem armazenados.</p>
+                <label for="contact-name">Nome</label>
+                <input id="contact-name" type="text" class="input-nome" required maxlength="100">
+
+                <label for="contact-email">E-mail</label>
+                <input id="contact-email" type="email" class="input-email" required>
+
+                <label for="contact-message">Mensagem</label>
+                <textarea id="contact-message" class="input-mensagem" required minlength="10" maxlength="2000"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="feedback" role="status" aria-live="polite"></div>
+        </section>
+
+        <footer>
+            <p>Feito com HTML e CSS em 2026</p>
+        </footer>
+    </main>
+
+    <script src="./scripts/formulario.js"></script>
+    <script src="./scripts/skills.js"></script>
+    <script src="./scripts/github-api.js"></script>
+</body>
+</html>
