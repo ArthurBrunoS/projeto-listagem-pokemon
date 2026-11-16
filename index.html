@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Catálogo de Pokémon com filtro por nome e tipo, cards e tema persistido.">
     <title>Listagem-Pokemon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,20 @@
         <a href="#">
             <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo">
         </a>
-        <button id="botao-alterar-tema">
+        <button id="botao-alterar-tema" type="button" aria-label="Alternar tema" aria-pressed="false">
             <img src="./src/imagens/sun.png" alt="imagen-do-sol" class="imagen-botao">
         </button>
     </header>
     <main>
+<h1>Catálogo Pokémon</h1>
+<form id="pokemon-filter" role="search">
+<label for="pokemon-search">Pesquisar por nome</label>
+<input id="pokemon-search" type="search" placeholder="Ex.: Bulbasaur">
+<label for="pokemon-type">Tipo</label>
+<select id="pokemon-type"><option value="">Todos</option><option value="grama">Grama</option><option value="veneno">Veneno</option><option value="fogo">Fogo</option><option value="agua">Água</option><option value="inseto">Inseto</option></select>
+<button type="reset">Limpar filtros</button>
+</form>
+<p id="filter-status" role="status" aria-live="polite"></p>
         <ul class="listagem-pokemon">
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -42,10 +51,10 @@
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
-                    <span>Ivisaur</span>
+                    <span>Ivysaur</span>
                     <span>#002</span>
                 </div>
-                <img src="./src/imagens/ivysaur.gif" alt="Ivisaur" class="gif">
+                <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif">
                 <ul class="tipos">
                     <li class="tipo grama">Grama</li>
                     <li class="tipo veneno">Veneno</li>
@@ -153,10 +162,11 @@
                 </div>
                 <img src="./src/imagens/caterpie.gif" alt="Caterpie" class="gif">
                 <ul>
-                    <li class="tipo inseto">Caterpie</li>
+                    <li class="tipo inseto">Inseto</li>
                 </ul>
                 <P class="descricao">Para proteção , ele libera um fedor horrível da antena em sua cabeça para afastar os inimigos.</P> 
             </li>
+        </ul>
     </main>
 
     <script src="./src/js/index.js"></script>
