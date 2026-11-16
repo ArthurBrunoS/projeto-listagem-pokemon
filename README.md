@@ -1,5 +1,7 @@
 # Catálogo Pokémon — versão estática
 
+[Demonstração online](https://arthurbrunos.github.io/projeto-listagem-pokemon/) · [Todos os projetos](https://arthurbrunos.github.io/projeto-listagem-pokemon/projetos/)
+
 Catálogo de estudo com cards locais de Pokémon, filtro por nome e tipo e alternância de tema.
 
 ## Tecnologias
@@ -32,7 +34,7 @@ A verificação visual e as capturas de tela devem ser feitas após abrir a vers
 
 ## Demonstração e publicação
 
-O GitHub Pages estava habilitado na análise do repositório, mas a URL e a versão publicada não foram confirmadas. As alterações propostas não configuram nem publicam uma hospedagem. Para uma publicação futura, utilize o ponto de entrada da raiz e confira os caminhos dos arquivos.
+O GitHub Pages publica a branch main deste repositório. A página projetos/ reúne os seis projetos. As pastas demos/ contêm cópias estáticas dos demais aplicativos, com versões de origem registradas em projetos/versoes.json. A publicação foi confirmada pelo fluxo do Pages e por verificação HTTP de 12 páginas e 37 recursos.
 
 ## Limitações e autoria
 
